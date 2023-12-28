@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 5000px;
+    
+}
+/* Это будет изменять размер полосы прокрутки для всего документа */
+::-webkit-scrollbar {
+    width: 7px; /* Здесь задается ширина полосы прокрутки */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Цвет самой полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет полосы прокрутки при наведении */
+}
+
+
+.left{
+    overflow-y: auto;
+    height: 100%;
+    border-right: 1px solid rgba(128, 128, 128, 0.744) ;
+    width: 20%;
+    position: fixed;
+    background-color: white;
+    
+}
+
+.logo1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+#logo{
+    margin-top: 10px;
+}
+#logo:hover {
+    transition: 1s;
+    animation: shake 0.5s;
+
+    animation-iteration-count: infinite;
+}
+img {
+    transition: transform 0.2s;
+}
+
+#logo:active {
+   animation: rotate 5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.but:hover{
+    border-bottom-right-radius: 25px ;
+    border-top-right-radius: 25px ;
+    background-color: #125586;
+    color: white;
+    transition: 0.80s;
+}
+.but{
+    color: #125586;
+    padding: 10px;
+    width: 93%;
+    height: 10%;
+    
+}
+.texts{
+    width: 100%;
+    margin-top: 20px;
+}
+#tags{
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+#ig{
+  
+    width: 94%;  
+    border-radius: 145px; 
+    
+}
+  
+.av{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.right{
+    position: relative;
+    left: 25%;
+    width: 70%;
+   
+   
+}
+
+.logs{
+    width: 100%;
+    height: 5%;
+    
+    display: flex;
+    justify-content: center;
+    color: #125586;
+    
+}
+
+#SoftClub{
+    left: 10%;
+    top: 13%;
+    position: relative;
+    font-size: 50px;
+    color: #125586;
+    
+}
+
+#view{
+    position: relative;
+    left: 10%;
+    top: 20%;
+    font-size: 19px;
+    padding: 4px;
+
+    color: #125586;
+    margin-top: 3px;
+    
+}
+
+#view:hover{
+    transition: 0.80s;
+    border-radius: 10px;
+    color: white;
+    background-color: #125586;
+}
+
+
+
+.log2{
+    width: 100%;
+    height: 500px;
+ 
+}
+
+.st{
+    display: flex;
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+    justify-content: space-between;
+    color: #125586;
+}
+
+#igsf{
+    height: 70%;
+    border-radius: 100px;
+}
+
+.cn{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.men{
+    margin-top: 29px;
+    border-top: 1px solid rgba(128, 128, 128, 0.766);
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+.bit{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 3px;
+    color: #125586;
+    width: 10%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.bit:hover{
+    background-color: #125586;
+    color: white;
+    border-radius: 10px;
+    transition: 0.80s;
+}
+
+
+.back{
+    
+    width: 324px;
+    height: 324px;
+    
+}
+
+
+.own{
+    color: white;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.back:hover .own{
+    transition: 0.80s;
+    z-index: 1;
+}
+
+.videos{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+}
